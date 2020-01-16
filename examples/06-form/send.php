@@ -11,8 +11,15 @@
     <form method="post" action="receive.php">
         Name:<br>
         <input type="text" name="my_name"><br>
+
         Age:<br>
         <input type="text" name="age"><br>
+
+        Colors:<br>
+        <input type="checkbox" name="color[yellow]" value="checked"> Gul<br>
+        <input type="checkbox" name="color[red]" value="checked"> Röd<br>
+        <input type="checkbox" name="color[green]" value="checked"> Grön<br>
+
         <input type="submit" name="send">
     </form>
 </body>
