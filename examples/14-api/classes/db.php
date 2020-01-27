@@ -1,6 +1,6 @@
 <?php
 
-namespace wiesapi;
+namespace webb19api;
 
 use \PDO;
 
