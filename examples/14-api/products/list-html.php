@@ -28,7 +28,6 @@ $products = null; // Change this to actually get the products.
         <tr>
             <th>productCode</th>
             <th>productName</th>
-            <th>productImage</th>
             <th>productLine</th>
             <th>productScale</th>
             <th>productVendor</th>

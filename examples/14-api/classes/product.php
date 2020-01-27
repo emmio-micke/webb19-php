@@ -30,7 +30,6 @@ class Product
         // Bind values.
         $statement->bindValue('productCode', filter_var($data->productCode, FILTER_SANITIZE_STRING));
         $statement->bindValue('productName', filter_var($data->productName, FILTER_SANITIZE_STRING));
-        $statement->bindValue('productImage', filter_var($data->productImage, FILTER_SANITIZE_STRING));
         $statement->bindValue('productLine', filter_var($data->productLine, FILTER_SANITIZE_STRING));
         $statement->bindValue('productScale', filter_var($data->productScale, FILTER_SANITIZE_STRING));
         $statement->bindValue('productVendor', filter_var($data->productVendor, FILTER_SANITIZE_STRING));
@@ -73,7 +72,6 @@ class Product
             $product_item = [
                 'productCode'        => $productCode,
                 'productName'        => $productName,
-                'productImage'       => $productImage,
                 'productLine'        => $productLine,
                 'productScale'       => $productScale,
                 'productVendor'      => $productVendor,
@@ -123,7 +121,6 @@ class Product
             $product_item = [
                 'productCode'        => $productCode,
                 'productName'        => $productName,
-                'productImage'       => $productImage,
                 'productLine'        => $productLine,
                 'productScale'       => $productScale,
                 'productVendor'      => $productVendor,
