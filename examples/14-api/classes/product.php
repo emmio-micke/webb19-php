@@ -19,9 +19,9 @@ class Product
     public function createProduct($data)
     {
         // Setup query.
-        $sql = 'INSERT INTO products (productCode, productName, productImage, productLine, ' .
+        $sql = 'INSERT INTO products (productCode, productName, productLine, ' .
             'productScale, productVendor, productDescription, quantityInStock, buyPrice, MSRP) ' .
-            'VALUES (:productCode, :productName, :productImage, :productLine, :productScale, ' .
+            'VALUES (:productCode, :productName, :productLine, :productScale, ' .
             ':productVendor, :productDescription, :quantityInStock, :buyPrice, :MSRP)';
 
         // Prepare query.

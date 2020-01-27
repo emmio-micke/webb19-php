@@ -27,7 +27,7 @@ $people = json_decode($file_content);
 <?php foreach ($people->results as $person) : ?>
     <tr>
         <td><?php
-            echo $person->name->first . ' ' . $person->name->first;
+            echo $person->name->first . ' ' . $person->name->last;
         ?></td>
 
         <td><?php
