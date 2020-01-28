@@ -1,0 +1,9 @@
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile "/Users/micke/www/projects/nackademin/Webb19/04-Webbutveckling med PHP/repo/examples/16-authentication/01-basic/.htpasswd"
+Require valid-user
+
+<Files "mypage.html">
+    Require user other
+</Files>
+
