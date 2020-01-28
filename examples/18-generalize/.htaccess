@@ -1,0 +1,9 @@
+# If you're using Apache, you can rename this file to .htaccess to get even nicer urls.
+# Instead of example.com/index.php?product/123 you would get example.com/product/123.
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ 18-generalize/index.php?$1 [L,QSA]
+</IfModule>
