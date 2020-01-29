@@ -17,7 +17,7 @@ $querystring = $_SERVER["QUERY_STRING"];
 
 // Get the querystring parts.
 $request_parts = explode('/', $querystring);
-// var_dump($request_parts);
+//var_dump($request_parts);
 //die;
 
 // Get request method. (GET, POST etc).
@@ -27,8 +27,8 @@ $request_method = strtolower($_SERVER['REQUEST_METHOD']);
 
 // Autoload classes.
 spl_autoload_register(function ($class_name) {
-    // var_dump('classes/' . $class_name . '.php');
-    // var_dump(file_exists('classes/' . $class_name . '.php'));
+    //var_dump('classes/' . $class_name . '.php');
+    //var_dump(file_exists('classes/' . $class_name . '.php'));
     if (file_exists('classes/' . $class_name . '.php')) {
         include 'classes/' . $class_name . '.php';
     } else {
